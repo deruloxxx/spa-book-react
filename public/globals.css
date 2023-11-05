@@ -18,8 +18,14 @@ body {
   bottom: 0;
   right: 2px;
   width: 300px;
-  height: 16px;
   cursor: pointer;
   border-radius: 8px 0 0 0;
-  background-color: #f00
+  background-color: #f00;
+  transition: height 0.3s linear;
+}
+.spa-slider.is-closed {
+  height: 16px;
+}
+.spa-slider.is-open {
+  height: 434px;
 }
