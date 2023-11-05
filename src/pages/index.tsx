@@ -1,12 +1,10 @@
-import {Slider} from "@/components/Slider/Slider";
-import {useState} from "react";
+import {ChatSlider} from "@/features/ChatSlider";
 
 export default function Home() {
-  const [handleSlider, setHandleSlider] = useState(false)
   return (
     <main>
       <div id={"spa"}>
-        <Slider handleSlider={handleSlider} setHandleSlider={() => setHandleSlider(!handleSlider)} />
+        <ChatSlider />
       </div>
     </main>
   )
