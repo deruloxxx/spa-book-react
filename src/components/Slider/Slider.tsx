@@ -10,7 +10,7 @@ export const Slider: FC<Props> = ({ handleSlider, setHandleSlider }) => {
   return (
     <div
       onClick={setHandleSlider}
-      className={clsx(handleSlider ? 'is-open' : 'is-closed', 'spa-slider')}
+      className={clsx(handleSlider ? 'is-open' : 'is-closed', 'spa-shell-chat')}
       title={handleSlider ? 'Click to retract' : 'Click to extend'}
     />
   )

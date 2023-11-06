@@ -5,7 +5,8 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/globals.css" />
+        <link rel="stylesheet" href="/spa.css" />
+        <link rel="stylesheet" href="/spa.shell.css" />
       </Head>
       <body>
         <Main />
