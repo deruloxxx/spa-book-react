@@ -8,8 +8,8 @@ export default function Document() {
         <link rel="stylesheet" href="/globals.css" />
       </Head>
       <body>
-      <Main />
-      <NextScript />
+        <Main />
+        <NextScript />
       </body>
     </Html>
   )

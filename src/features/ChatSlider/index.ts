@@ -1,1 +1,1 @@
-export { ChatSlider } from "./ChatSlider"
+export { ChatSlider } from './ChatSlider'
