@@ -1,13 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Slider } from '../../components/Slider/Slider.tsx'
 
 export const ChatSlider = () => {
-  const [handleSlider, setHandleSlider] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    const newHash = isOpen ? '#!chat=open' : '#!chat=close'
+    window.history.pushState(null, '', newHash)
+  }, [isOpen])
 
   return (
-    <Slider
-      handleSlider={handleSlider}
-      setHandleSlider={() => setHandleSlider(!handleSlider)}
-    />
+    <Slider handleSlider={isOpen} setHandleSlider={() => setIsOpen(!isOpen)} />
   )
 }
