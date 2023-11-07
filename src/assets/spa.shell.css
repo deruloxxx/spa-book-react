@@ -1,17 +1,11 @@
 /*
  * spa.shell.css
- * シェルスタイル
+ * Shell styles
 */
 
-.spa-shell-head,
-.spa-shell-head-logo,
-.spa-shell-head-acct,
-.spa-shell-head-search,
-.spa-shell-main,
-.spa-shell-main-nav,
-.spa-shell-main-content,
-.spa-shell-foot,
-.spa-shell-chat,
+.spa-shell-head, .spa-shell-head-logo, .spa-shell-head-acct,
+.spa-shell-head-search, .spa-shell-main, .spa-shell-main-nav,
+.spa-shell-main-content, .spa-shell-foot,
 .spa-shell-modal {
   position: absolute;
 }
@@ -34,16 +28,16 @@
 .spa-shell-head-acct {
   top: 4px;
   right: 0;
-  height: 32px;
   width: 64px;
+  height: 32px;
   background: green;
 }
 
 .spa-shell-head-search {
   top: 4px;
   right: 64px;
-  height: 32px;
   width: 248px;
+  height: 32px;
   background: blue;
 }
 
@@ -54,7 +48,6 @@
   right: 0;
 }
 
-/* 共通CSSルールを定義 */
 .spa-shell-main-content,
 .spa-shell-main-nav {
   top: 0;
@@ -66,7 +59,6 @@
   background: #eee;
 }
 
-/* 親クラスを使って子要素に影響を及ぼす */
 .spa-x-closed .spa-shell-main-nav {
   width: 0;
 }
@@ -77,8 +69,6 @@
   background: #ddd;
 }
 
-/* 派生セレクタをインデントし、親セレクタの直下に配置する */
-/* 派生セレクタは、その意味が明らかに親に依存しているセレクタ */
 .spa-x-closed .spa-shell-main-content {
   left: 0;
 }
@@ -88,29 +78,6 @@
   left: 0;
   right: 0;
   height: 40px;
-}
-
-.spa-shell-chat {
-  bottom: 0;
-  right: 0;
-  width: 300px;
-  cursor: pointer;
-  background: red;
-  border-radius: 5px 0 0 0;
-  z-index: 1;
-  transition: height 0.3s linear;
-}
-.spa-shell-chat.is-closed {
-  height: 16px;
-}
-.spa-shell-chat.is-open {
-  height: 434px;
-}
-
-/* カーソルがスライダーの上に来たら、スライダーの色を変える */
-/* これにより、クリックすると動きがあるというメッセージをユーザーに示す */
-.spa-shell-chat:hover {
-  background: #a00;
 }
 
 .spa-shell-modal {
@@ -123,4 +90,5 @@
   background: #fff;
   border-radius: 3px;
   z-index: 2;
+  display: none;
 }
